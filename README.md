@@ -12,7 +12,7 @@ If you want any of the audio commands, you must have the following installed:
 Instructions are [here](http://pastebin.com/Qb2TvxLy).
 
 ##Install
-Run "npm install" to download required moduled. Run "node bot" to start the bot. 
+Run "npm install" to download required modules. Run "node bot" to start the bot. 
 ##Commands
 ###Quotes
 
