@@ -1,7 +1,7 @@
 # Umi Bot
 A general purpose Discord bot designed for a small-sized server.
 ## Requirements
-Create two seperate discord accounts [here](https://discordapp.com/register) and manually add them to the server. Change the  .login() functions with the correct account credentials. Get a Wolfram Alpha API [here](http://products.wolframalpha.com/developers/) and update the key in the .createClient() function. Download ffmpeg [here](https://ffmpeg.zeranoe.com/builds/) and update the ffmpeg path constant. 
+Create a discord bot account [here](https://discordapp.com/developers/applications/me) and save the token. Get a Wolfram Alpha API [here](http://products.wolframalpha.com/developers/) and save the API key. Update the config.js file with these values, along with your MongoDB connection string. Download ffmpeg [here](https://ffmpeg.zeranoe.com/builds/) and add it to your PATH. 
 
 If you want any of the audio commands, you must have the following installed:
 
@@ -20,11 +20,17 @@ Run "npm install" to download required modules. Run "node bot" to start the bot.
 
 **!addquote [quote]**: Add a new quote
 
-###Audio
+**!numquotes**: Get number of quotes stored
 
-**!play [tag] {volume}**: Plays the specified clip in the voice channel the message's owner is in
+### Audio
 
-**!listaudio**: Lists the audio clips tags available for playback
+**!play [tag] {volume} **: Plays the specified clip in the voice channel the message's owner is in
+
+**!stream [youtube_url] {volume} {seek}**: Streams a youtube video's audio channel
+
+**!listclips**: Lists the audio clips tags available for playback
+
+**!listsongs**: Lists the song tags available for playback
 
 **!download [youtube url] {tag}**  OR  **!download [direct .mp3 URL] {tag}**: Downloads and/or extracts an mp3 for playback
 
@@ -32,21 +38,8 @@ Run "npm install" to download required modules. Run "node bot" to start the bot.
 
 **!leave**: Forces bot to leave the call
 
-**!addtoplaylist [playlist] [song]  OR  !queue [playlist] [song]**: Add song to playlist
 
-**!startplaylist [playlist]  OR  !startqueue [playlist]**: Starts playback of playlist in voice channel, will also skip current song if already playing
-
-**!stopplaylist  OR  !stopqueue**: Stops playback
-
-**!listplaylists**: List playlists
-
-**!deleteplaylist [playlist]  OR  !deletequeue [playlist]**: Deletes the specified playlist
-
-**!removefromplaylist [playlist][song]  OR  !removefromqueue [playlist] [song]**: Removes specified song from playlist
-
-**!shuffle [playlist]** : Shuffles the playlist
-
-###Text
+### Text
 
 **!cp [tag] OR  !pasta [tag]  OR  !copypasta [tag]**: Prints out the specified copypasta
 
@@ -54,6 +47,7 @@ Run "npm install" to download required modules. Run "node bot" to start the bot.
 
 **!addcp [tag] [text]  OR  !addpasta [tag] [text]  OR  !addcopypasta [tag] [text]** : Add a new copypasta
 
-###Misc
+
+### Misc
 
 **!domath [query]**: Evaluate a mathematical expression using wolfram-alpha
