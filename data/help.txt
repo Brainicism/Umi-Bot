@@ -2,21 +2,16 @@
 __Quotes__
 **!quote** : Send a random previously added quote
 **!addquote [quote]**: Add a new quote
-
+**!numquotes**: Get number of quotes stored
 __Audio__
 **!play [tag] {volume} **: Plays the specified clip in the voice channel the message's owner is in
-**!listaudio**: Lists the audio clips tags available for playback
+**!stream [youtube_url] {volume} {seek}**: Streams a youtube video's audio channel
+**!listclips**: Lists the audio clips tags available for playback
+**!listsongs**: Lists the song tags available for playback
 **!download [youtube url] {tag}**  OR  **!download [direct .mp3 URL] {tag}**: Downloads and/or extracts an mp3 for playback
 **!stop**: Stops playback
 **!leave**: Forces bot to leave the call
 
-**!addtoplaylist [playlist] [song]  OR  !queue [playlist] [song]**: Add song to playlist
-**!startplaylist [playlist]  OR  !startqueue [playlist]**: Starts playback of playlist in voice channel, will also skip current song if already playing
-**!stopplaylist  OR  !stopqueue**: Stops playback
-**!listplaylists**: List playlists
-**!deleteplaylist [playlist]  OR  !deletequeue [playlist] **: Deletes the specified playlist
-**!removefromplaylist [playlist][song]  OR  !removefromqueue [playlist] [song]**: Removes specified song from playlist
-**!shuffle [playlist]** : Shuffles the playlist
 __Text__
 **!cp [tag] OR  !pasta [tag]  OR  !copypasta [tag]**: Prints out the specified copypasta
 **!listcp  OR !listpasta  OR  !listcopypasta**: Lists available copy pastas
