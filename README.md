@@ -11,10 +11,10 @@ If you want any of the audio commands, you must have the following installed:
 
 Instructions are [here](http://pastebin.com/Qb2TvxLy).
 
-##Install
-Run "npm install" to download required modules. Run "node bot" to start the bot. 
-##Commands
-###Quotes
+## Install
+Run "npm install" to download required modules. Run "node bot" to start the bot
+## Commands
+### Quotes
 
 **!quote** : Send a random previously added quote
 
@@ -24,7 +24,7 @@ Run "npm install" to download required modules. Run "node bot" to start the bot.
 
 ### Audio
 
-**!play [tag] {volume} **: Plays the specified clip in the voice channel the message's owner is in
+**!play [tag] {volume}**: Plays the specified clip in the voice channel the message's owner is in
 
 **!stream [youtube_url] {volume} {seek}**: Streams a youtube video's audio channel
 
